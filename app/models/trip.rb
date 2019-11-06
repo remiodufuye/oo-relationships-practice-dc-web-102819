@@ -17,10 +17,4 @@ class Trip
      end 
 
 
-      def listing
-        Trip.all.select do |trip|
-        trip.listing
-        end 
-      end 
-
-end 
+end  

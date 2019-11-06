@@ -45,9 +45,9 @@ Create the necessary methods to connect these classes.
 
 #### Trip
 
-- #listing
+<!-- - #listing
   - returns the listing object for the trip
 - #guest
-  - returns the guest object for the trip
+  - returns the guest object for the trip -->
 <!-- - .all
   - returns an array of all trips -->

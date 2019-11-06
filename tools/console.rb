@@ -25,6 +25,8 @@ trip3 = Trip.new(bose, bigbro)
 trip4 = Trip.new(yinca, safehouse)
 trip4 = Trip.new(remi , funfactory) 
 
+puts trip1.listing 
+
 
 
 binding.pry
