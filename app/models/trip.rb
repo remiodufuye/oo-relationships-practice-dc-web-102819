@@ -15,6 +15,11 @@ class Trip
      def self.all
         @@all 
      end 
+ 
+   # helper method for listing count 
 
+     def count_all
+        self.all.length
+     end 
 
 end  

@@ -24,11 +24,12 @@ trip2 = Trip.new(remi , bigbro)
 trip3 = Trip.new(bose, bigbro)
 trip4 = Trip.new(yinca, safehouse)
 trip4 = Trip.new(remi , funfactory) 
+trip5 = Trip.new(bose , funfactory) 
 
-puts trip1.listing 
 
 puts yinca.trips 
-
+puts bigbro.trip_count 
 
 binding.pry
-0
+0  
+
