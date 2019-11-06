@@ -1,0 +1,7 @@
+
+class Trip
+
+
+
+    
+end 
