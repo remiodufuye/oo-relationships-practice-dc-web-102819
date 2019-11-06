@@ -27,6 +27,7 @@ trip4 = Trip.new(remi , funfactory)
 
 puts trip1.listing 
 
+puts yinca.trips 
 
 
 binding.pry

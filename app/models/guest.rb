@@ -14,5 +14,11 @@ class Guest
         @@all 
     end 
 
+    def trips
+        Trip.all.select do |trip|
+            trip.guest == self 
+        end 
+    end 
+
 end 
 

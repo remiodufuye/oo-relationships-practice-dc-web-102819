@@ -15,7 +15,12 @@ class Listing
      def self.all
         @@all 
      end 
-
+    
+     def trips
+        Trip.all.select do |trip|
+            trip.listing == self 
+        end 
+     end 
 
 
 end 
