@@ -11,6 +11,37 @@ class Listing
     @@all << self 
   end 
 
+  def trips
+    Trip.all.select do |trip|
+        trip.listing == self 
+    end 
+  end 
+
+  def guests
+    self.trips.map do |trip|
+        trip.guest
+    end 
+  end 
+
+  def trip_count 
+    self.trips.length 
+  end 
+
+  #takes an argument of a city name (as a string) and returns all the listings for that city
+  def self.find_all_by_city(find_city)
+    self.all.select do |list|
+        list.city == find_city.to_s
+    end 
+  end  
+
+
+  def self.most_popular
+     trips.map do |listing|
+        listing.trip_count 
+    end 
+  end 
+
+
   def self.all 
     @@all 
   end 
