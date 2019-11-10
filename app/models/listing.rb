@@ -36,7 +36,13 @@ class Listing
 
 
   def self.most_popular 
+    listing_count = []
+    Trip.all.select do |trip|
+      listing_count << trip.listing.trip_count 
     end 
+    binding.pry 
+    # listing_count.sort  
+    # listing_count[-1]
   end 
 
 

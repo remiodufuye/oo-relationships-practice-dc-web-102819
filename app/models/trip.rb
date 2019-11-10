@@ -16,4 +16,4 @@ class Trip
         @@all 
     end 
 
-end   
+end     

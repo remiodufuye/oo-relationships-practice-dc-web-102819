@@ -2,6 +2,8 @@
 class Guest
 
     @@all = []
+
+    attr_reader :name 
     
     def initialize(name)
         @name = name 
@@ -30,9 +32,8 @@ class Guest
 
     def self.find_all_by_name(new_name)
         self.all.select do |guest|
-            guest.name == new_name.to_s
+            guest.name == new_name.to_s 
         end 
       end  
-
 
 end  
