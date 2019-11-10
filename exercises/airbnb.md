@@ -27,8 +27,8 @@ Create the necessary methods to connect these classes.
 - .find_all_by_city(city)
   - takes an argument of a city name (as a string) and returns all the listings for that city -->
 
-- .most_popular
-  - finds the listing that has had the most trips 
+<!-- - .most_popular
+  - finds the listing that has had the most trips  -->
 
 #### Guest
 
@@ -40,8 +40,8 @@ Create the necessary methods to connect these classes.
   - returns the number of trips a guest has taken -->
  <!-- - .all
   - returns an array of all guest -->
-- .pro_traveller
-  - returns an array of all guests who have made over 1 trip 
+<!-- - .pro_traveller
+  - returns an array of all guests who have made over 1 trip  -->
 
 <!-- - .find_all_by_name(name)
   - takes an argument of a name (as a string), returns the all guests with that name -->

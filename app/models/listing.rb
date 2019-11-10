@@ -34,16 +34,19 @@ class Listing
     end 
   end  
 
-
-  def self.most_popular 
-    listing_count = []
-    Trip.all.select do |trip|
-      listing_count << trip.listing.trip_count 
+ 
+   #helper method for the most popular method 
+   def self.most_pop_help 
+    Trip.all.map do |trip|
+    trip.listing.name 
     end 
-    binding.pry 
-    # listing_count.sort  
-    # listing_count[-1]
-  end 
+   end 
+
+
+    def self.most_popular 
+    most_pop_hash = self.most_pop_help.reduce(Hash.new(0)) { |a, b| a[b] += 1; a }
+    most_pop_hash.keys.max
+   end 
 
 
   def self.all 

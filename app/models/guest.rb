@@ -5,7 +5,7 @@ class Guest
 
     attr_reader :name 
     
-    def initialize(name)
+    def initialize (name)
         @name = name 
         @@all = self 
     end 
@@ -32,8 +32,26 @@ class Guest
 
     def self.find_all_by_name(new_name)
         self.all.select do |guest|
-            guest.name == new_name.to_s 
+            guest.name == new_name
         end 
       end  
+
+      def self.pro_traveller_help
+        Trip.all.map do |trips|
+            trips.guest.name 
+        end 
+      end 
+
+      def self.pro_traveller
+        pro_travel_hash = self.pro_traveller_help.reduce(Hash.new(0)) { |a, b| a[b] += 1; a }
+        pro_travel_hash.select {|k,v| v > 1}
+        # pro_travel_hash.collect{|k,v| pro_travel_hash[k]}
+        pro_travel_hash.keys
+      end 
+
+ 
+
+
+
 
 end  
