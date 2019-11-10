@@ -28,6 +28,21 @@ end
 
 #### CONSOLE TEST FOR LYFT BEGINS HERE ##############
 
+driver1 = Driver.new("Mike")
+driver2 = Driver.new("James")
+driver3 = Driver.new("Peter") 
+
+passenger1 = Passenger.new("John")
+passenger2 = Passenger.new("Ronnie")
+passenger3 = Passenger.new("Bobby")
+
+ride1 = Ride.new(driver1,passenger1,10)
+ride2 = Ride.new(driver1,passenger2,5)
+ride3 = Ride.new(driver1,passenger3,7)
+ride4 = Ride.new(driver2,passenger1,2)
+
+
+
 
 
 
