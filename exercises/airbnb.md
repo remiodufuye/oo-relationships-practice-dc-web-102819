@@ -43,8 +43,8 @@ Create the necessary methods to connect these classes.
 - .pro_traveller
   - returns an array of all guests who have made over 1 trip 
 
-- .find_all_by_name(name)
-  - takes an argument of a name (as a string), returns the all guests with that name
+<!-- - .find_all_by_name(name)
+  - takes an argument of a name (as a string), returns the all guests with that name -->
 
 
 #### Trip
