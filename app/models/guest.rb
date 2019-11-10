@@ -34,13 +34,5 @@ class Guest
         end 
       end  
 
- 
-#   def self.find_all_by_city(find_city)
-#     self.all.select do |list|
-#         list.city == find_city.to_s
-#     end 
-#   end  
-
-
 
 end  

@@ -27,7 +27,7 @@ class Listing
     self.trips.length 
   end 
 
-  #takes an argument of a city name (as a string) and returns all the listings for that city
+
   def self.find_all_by_city(find_city)
     self.all.select do |list|
         list.city == find_city.to_s
@@ -35,9 +35,7 @@ class Listing
   end  
 
 
-  def self.most_popular
-     trips.map do |listing|
-        listing.trip_count 
+  def self.most_popular 
     end 
   end 
 
