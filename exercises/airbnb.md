@@ -13,7 +13,7 @@ You are building an app for an Airbnb competitor
 Write out the relationships using has_many, belongs_to and has_many_through.
 Create the necessary methods to connect these classes.
 
-#### Listing
+#### Listing 
 
 <!-- - #guests
   - returns an array of all guests who have stayed at a listing  -->
@@ -23,9 +23,9 @@ Create the necessary methods to connect these classes.
   - returns the number of trips that have been taken to that listing -->
 <!-- - .all
   - returns an array of all listings -->
-
+<!-- 
 - .find_all_by_city(city)
-  - takes an argument of a city name (as a string) and returns all the listings for that city
+  - takes an argument of a city name (as a string) and returns all the listings for that city -->
 
 - .most_popular
   - finds the listing that has had the most trips 
