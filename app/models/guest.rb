@@ -28,7 +28,6 @@ class Guest
         self.trips.length 
     end 
 
-
     def self.find_all_by_name(new_name)
         self.all.select do |guest|
             guest.name == new_name.to_s
