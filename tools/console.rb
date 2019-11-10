@@ -5,6 +5,8 @@ def reload
 end
 
 
+### CONSOLE TEST SEED FOR AIR B AND B STARTS HERE ### 
+
 listing1 = Listing.new("Hollywood Hills" , "Los Angeles")
 listing2 = Listing.new("Brons Home" , "Los Angeles") 
 listing3 = Listing.new("Curry Home" , "Charlotte") 
@@ -26,6 +28,8 @@ trip9 = Trip.new(listing1,guest1)
 trip10 = Trip.new(listing2,guest2) 
 trip11 = Trip.new(listing1,guest2)
 trip12 = Trip.new(listing1,guest3) 
+
+### CONSOLE TEST SEED FOR AIR B AND B ENDS  HERE ### 
 
 
 
