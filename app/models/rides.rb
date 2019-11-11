@@ -1,9 +1,9 @@
 
 class Ride
 
-@@all = []
+attr_reader :passenger, :driver, :distance 
 
-attr_reader :passenger,:driver,:distance 
+@@all = []
 
 def initialize(passenger,driver,distance)
     @passenger = passenger 
